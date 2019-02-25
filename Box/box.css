@@ -1,0 +1,114 @@
+/* latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Overpass Regular'), local('Overpass-Regular'), url(https://fonts.gstatic.com/s/overpass/v3/qFdH35WCmI96Ajtm81GlU9s.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+html, body {
+    background-image: linear-gradient(to right,#bbb, #ededed); 
+    height: 100%; 
+    width: 100%; 
+    margin: 0;
+    padding: 2em; 
+    overflow: hidden; 
+    font-family: 'Overpass'; 
+}
+
+#root {
+    padding: 1em 1em;
+    margin: 0 auto; 
+    max-width: 620px; 
+
+}
+
+.box-wrapper {
+    border-style: hidden;
+    padding-top: none; 
+    padding-bottom: 1em; 
+    background-color: white; 
+}
+
+.navbar {
+    background-image: linear-gradient(#c00, #470000); 
+    color: white; 
+    padding: .75em 1em; 
+    height: 45px; 
+}
+
+.navbar > ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+.navbar a {
+    color: white; 
+    text-align: right; 
+    text-decoration: none; 
+    text-align: center; 
+}
+
+
+.navbar-right > li {
+    padding-left: 1em;
+    padding-right: .9em; 
+    padding-top: 0; 
+    padding-bottom: .5em;
+    margin: 0; 
+    display: inline-block;
+    border-left: .01em solid white; 
+    height: 100%; 
+}
+
+li:last-child {
+    border-right: none; 
+    padding-right: 0; 
+}
+
+.navbar-right > li a:hover {
+    background-image: radial-gradient(#c00, #1a1a1a);
+    padding-left: 1em; 
+    padding-right: .9em; 
+}
+
+.active{
+    background-image: radial-gradient(#c00, #1a1a1a);
+    width: 100%;
+    padding: 1em; 
+}
+
+.panel {
+    padding-top: 1em; 
+    padding-left: 1em; 
+    padding-right: 1em; 
+}
+
+.panel > h2 {
+    font-weight: bold; 
+}
+
+.panel-description {
+    font-weight: bold; 
+}
+
+.case-header{
+    font-weight: bold; 
+    display: inline-block; 
+}
+.case-descriptor {
+    display: inline-block; 
+    margin-left: 4em; 
+}
+
+.case-status {
+    display: inline-block; 
+    margin-left: 4em; 
+    padding: 3px; 
+    border-radius: 3px; 
+    background: green; 
+    color: white; 
+}
