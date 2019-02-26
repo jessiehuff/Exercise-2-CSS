@@ -21,7 +21,6 @@ html, body {
     padding: 9em 1em 0em;
     margin: 0 auto; 
     max-width: 620px; 
-
 }
 
 .box-wrapper {
@@ -34,8 +33,15 @@ html, body {
 .navbar {
     background-image: linear-gradient(#c00, #470000); 
     color: white; 
-    padding: .75em 1em; 
+    padding-left: 1em; 
     height: 45px; 
+    line-height: 45px;
+    position: relative; 
+}
+
+.navbar > h4 {
+    display: inline-block; 
+    margin: 0;
 }
 
 .navbar > ul {
@@ -43,6 +49,7 @@ html, body {
     margin: 0; 
     padding: 0; 
     overflow: hidden; 
+    display: inline-block; 
 }
 
 .navbar a {
@@ -52,12 +59,13 @@ html, body {
     text-align: center; 
 }
 
+.navbar-right {
+    position: absolute;
+    right: 0; 
+}
 
 .navbar-right > li {
-    padding-left: 1em;
-    padding-right: .9em; 
-    padding-top: 0; 
-    padding-bottom: .5em;
+    padding: 0 1em;
     margin: 0; 
     display: inline-block;
     border-left: .01em solid white; 
@@ -66,21 +74,14 @@ html, body {
 
 li:last-child {
     border-right: none; 
-    padding-right: 0; 
 }
 
-.navbar-right > li a:hover {
+.navbar-right > li:hover {
     background-image: radial-gradient(#c00, #1a1a1a);
-    width: 100%;
-    padding-left: 0; 
-    padding-right: 0;
 }
 
 .active{
     background-image: radial-gradient(#c00, #1a1a1a);
-    width: 100%;
-    padding-left: 0; 
-    padding-right: 0;  
 }
 
 .panel {
@@ -90,10 +91,6 @@ li:last-child {
 }
 
 .panel > h2 {
-    font-weight: bold; 
-}
-
-.panel-description {
     font-weight: bold; 
 }
 
@@ -111,7 +108,7 @@ li:last-child {
 .case-status {
     display: inline-block; 
     margin-left: 3em; 
-    padding: 3px; 
+    padding: 3px 7px; 
     border-radius: 3px; 
     background: green; 
     color: white; 
