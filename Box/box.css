@@ -70,6 +70,7 @@ html, body {
     display: inline-block;
     border-left: .01em solid white; 
     height: 100%; 
+    color: white;
 }
 
 li:last-child {
