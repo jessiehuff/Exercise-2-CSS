@@ -18,7 +18,7 @@ html, body {
 }
 
 #root {
-    padding: 1em 1em;
+    padding: 9em 1em 0em;
     margin: 0 auto; 
     max-width: 620px; 
 
@@ -71,14 +71,16 @@ li:last-child {
 
 .navbar-right > li a:hover {
     background-image: radial-gradient(#c00, #1a1a1a);
-    padding-left: 1em; 
-    padding-right: .9em; 
+    width: 100%;
+    padding-left: 0; 
+    padding-right: 0;
 }
 
 .active{
     background-image: radial-gradient(#c00, #1a1a1a);
     width: 100%;
-    padding: 1em; 
+    padding-left: 0; 
+    padding-right: 0;  
 }
 
 .panel {
@@ -98,15 +100,17 @@ li:last-child {
 .case-header{
     font-weight: bold; 
     display: inline-block; 
+    width: 20%; 
 }
 .case-descriptor {
     display: inline-block; 
-    margin-left: 4em; 
+    margin-left: 3em; 
+    width: 50%; 
 }
 
 .case-status {
     display: inline-block; 
-    margin-left: 4em; 
+    margin-left: 3em; 
     padding: 3px; 
     border-radius: 3px; 
     background: green; 
