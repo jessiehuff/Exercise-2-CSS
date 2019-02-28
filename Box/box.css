@@ -8,7 +8,7 @@
   }
 
 html, body {
-    background-image: linear-gradient(to right,#bbb, #ededed); 
+    background-image: linear-gradient(to right, #bbb, #ededed 800px, #bbb 1800px); 
     height: 100%; 
     width: 100%; 
     margin: 0;
